@@ -54,10 +54,9 @@ public class Product {
 
 	public void setQuantity(int quantity) {
 		if (quantity >= 1) // If the quantity is higher or equal 1,so the quantity is the the quantity in BDD
-                this.quantity = quantity;
-
-        if (quantity < 1)// If the quantity is lower 1, the quantity is 0
-         quantity = 0;
+			this.quantity = quantity;
+        else if (quantity < 1)// If the quantity is lower 1, the quantity is 0
+         	quantity = 0;
 
 	}
 
@@ -67,9 +66,8 @@ public class Product {
 
 	public void setPrice(double price) {
         if (price < 1) // if the price is lower 1 so the price is 0
-		 price = 0;
-
-        if (price > 1000) // if the price is higher 1000 so the price is 1000
+		 	price = 0;
+        else if (price > 1000) // if the price is higher 1000 so the price is 1000
             price = 1000;
 
         if (price >= 1 || price < 1000) // if the price is greater than or equal 1 or lower 1000 so the price is the price in BDD
