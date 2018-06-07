@@ -70,7 +70,7 @@ public class Product {
         else if (price > 1000) // if the price is higher 1000 so the price is 1000
             price = 1000;
 
-        if (price >= 1 || price < 1000) // if the price is greater than or equal 1 or lower 1000 so the price is the price in BDD
+        if (price >= 1 && price <= 1000) // if the price is greater than or equal 1 and lower ou equal at 1000 so the price is the price in BDD
             this.price = price;
 	}
 
