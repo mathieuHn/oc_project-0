@@ -65,7 +65,7 @@ public class Product {
 	}
 
 	public void setPrice(double price) {
-        if (price < 1) // if the price is lower 1 so the price is 0
+        if (price < 0) // if the price is lower 1 so the price is 0
 		 	price = 0;
         else if (price > 1000) // if the price is higher 1000 so the price is 1000
             price = 1000;
